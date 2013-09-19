@@ -1,0 +1,3 @@
+idlj -fall Agenda.idl
+javac *.java AgendaApp/*.java
+java AgendaClient -ORBInitialHost nameserverhost -ORBInitialPort 1050

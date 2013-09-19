@@ -1,0 +1,10 @@
+module AgendaApp
+{
+  interface Agenda
+  {
+  long salvar(in string nome, in string telefone);
+  long atualizar(in string nome, in string telefone);
+  long apagar(in string nome);
+  string consultar(in string nome);
+  };
+};

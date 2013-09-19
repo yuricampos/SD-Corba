@@ -1,0 +1,4 @@
+idlj -fall Agenda.idl
+javac -cp jdbm-1.0.jar *.java AgendaApp/*.java
+orbd -ORBInitialPort 1050 -ORBInitialHost servermachinename&
+java -cp jdbm-1.0.jar:. AgendaServer -ORBInitialPort 1050
